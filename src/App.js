@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import react from "react"
+import Navbar from "./components/Navbar"
+import Main from "./components/Main"
+import Contact from "./components/Contact"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+
+export default function App() {
+    return (
+        <div className="contacts">
+           <Contact 
+                img="../Images/Ayi.jpg" 
+                name="Mr. Whiskerson"
+                phone="(212) 555-1234"
+                email="mr.whiskaz@catnap.meow"
+            />
+            <Contact 
+                img="../Images/Ayi.jpg" 
+                name="Fluffykins"
+                phone="(212) 555-2345"
+                email="fluff@me.com"
+            />
+            <Contact 
+                img="../Images/Ayi.jpg" 
+                name="Felix"
+                phone="(212) 555-4567"
+                email="thecat@hotmail.com"
+            />
+            <Contact 
+                img="../Images/Ayi.jpg" 
+                name="Pumpkin"
+                phone="(0800) CAT KING"
+                email="pumpkin@scrimba.com"
+            />
+        </div>
+    )
+}    
+       
+
+
+   
